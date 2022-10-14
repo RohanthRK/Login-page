@@ -1,0 +1,210 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.logo{
+    margin:10px 15px;
+    padding: 10px 15px;
+}
+
+.logo img{
+    width:200px;
+    height:80px;
+}
+.full{
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(/images/pink.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+}
+
+.navbar{
+    display: flex;
+    top:10px;
+    position: absolute;
+    padding: 0px 35px;
+    align-items: center;
+    
+}
+/*
+.navbar nav ul{
+    float:right;
+    display: inline block;
+    position: relative;
+
+}
+*/
+
+.navbar nav{
+    flex:1;
+    text-align: right;
+    justify-content: right;
+    
+}
+
+.navbar nav ul{
+    display: inline;
+    list-style: none;
+    margin-left: 800px;
+    justify-content: right;
+}
+
+.navbar nav ul li{
+    display: inline-block;
+    /*margin:20px 20px;*/
+    padding: 20px 20px;
+    
+}
+
+.navbar nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.btn{
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-transform: capitalize;
+    font-weight: bold;
+    border: none;
+}
+
+nav ul li::after{
+    content: '';
+    width:0;
+    height:3.5px;
+    background: palevioletred;
+    /*top:10px;
+    bottom:-10px;*/
+    display: block;
+    transition: 0.5s;
+    cursor:pointer;
+}
+nav ul li:hover::after{
+    width:100%;
+}
+
+.btn:hover{
+    background-color: plum;
+    color: #fff;
+}
+.navbar nav ul li a:hover{
+    color: plum;
+}
+
+#login-form{
+    display: none;}
+
+
+.form-box{
+    width:400px;
+    height:500px;
+
+    margin:60px auto;
+    background: rgba(0,0,0,0.3);
+    position: relative;
+    overflow: hidden;
+    padding: 10px;
+    
+}
+
+.button-box{
+    width:200px;
+    margin:35px auto;
+    position: relative;
+    box-shadow: 0 0 20px 9px #ff61241f;
+    border-radius: 30px;
+}
+
+.toggle-btn{
+    padding: 10px 30px;
+    cursor:pointer;
+    background: transparent;
+    border:0;
+    outline: none;
+    position: relative;
+}
+#btn{
+    top:0;
+    left:0;
+    position: absolute;
+    width: 110px;
+    height: 100%;
+    background: #F3C693;
+    border-radius: 30px;
+    transition: 0.5s;
+}
+
+
+.input-login{
+    top:150px;
+    position: absolute;
+    width:300px;
+    transition: 0.5s;
+}
+
+.input-register{
+    top:120px;
+    position: absolute;
+    width: 300px;
+    transition: 0.5s;
+}
+
+.input-field{
+    width:100%;
+    padding: 10px 0;
+    margin: 5px 0;
+    background: transparent;
+    outline: none;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 1px solid #999;
+}
+
+.submit-btn{
+    width:85%;
+    padding: 10px 30px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    background: #F3C693;
+    border: 0;
+    outline: none;
+    border-radius: 30px;
+}
+
+.checkbox{
+    margin: 30px 10px 34px 0;
+}
+
+span{
+    color:#777;
+    font-size: 12px;
+    bottom:68px;
+    position: absolute;
+}
+
+#login{
+    left:50px;
+
+}
+#login input{
+    color: white;
+    font-size: 15;
+}
+
+#register{
+    left: 450px;
+}
+#register input{
+    color: white;
+    font-size: 15;
+}
